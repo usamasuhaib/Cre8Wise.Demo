@@ -1,0 +1,237 @@
+<div class="flex flex-col md:flex-row justify-between w-full h-full px-2">
+  <div class="w-full md:w-[75%] h-100  flex flex-col  px-2 gap-2 ">
+
+    <div id="row1" class=" w-[100%] min-h-[30%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+
+      <div class="w-full h-full bg-slate-100 rounded-md shadow-md  flex flex-col justify-between gap p-2">
+
+        <div class="flex flex-col gap-2 ">
+          <div class="bg-green-300 ml-1 rounded-lg w-[40px] h-[40px] flex justify-center items-center">
+            <fa-icon class=" text-xl   text-green-600" [icon]="faCheck"></fa-icon>
+          </div>
+          <h2 class="text-base font-bold ml-1">Completed Tasks</h2>
+        </div>
+        <p class="ml-1">{{ completedTasks }} Tasks</p>
+
+      </div>
+
+      <div class="w-full h-full bg-slate-100 rounded-md shadow-md  flex flex-col justify-between gap p-2">
+
+        <div class="flex flex-col gap-2 ">
+          <div class="bg-rose-200 ml-1 rounded-lg w-[40px] h-[40px] flex justify-center items-center">
+            <fa-icon class=" text-xl  text-rose-600" [icon]="faCalender"></fa-icon>
+          </div>
+          <h2 class="text-base ml-1 font-bold"> Task Calender</h2>
+        </div>
+        <p class="ml-1">june 26,2024</p>
+
+      </div>
+
+
+      <div class="w-full h-full bg-slate-100 rounded-md shadow-md  flex flex-col justify-between gap p-2">
+
+        <div class="flex flex-col gap-2 ">
+          <div class="bg-yellow-100 ml-1  rounded-lg w-[40px] h-[40px] flex justify-center items-center">
+            <fa-icon class=" text-xl  text-yellow-500" [icon]="faLightbulb"></fa-icon>
+          </div>
+          <h2 class="text-base ml-1 font-bold"> Task Suggestions</h2>
+        </div>
+        <p class="ml-1">{{ taskSuggestions }} suggestions</p>
+
+      </div>
+      <div class="w-full h-full bg-slate-100 rounded-md shadow-md  flex flex-col justify-between gap p-2">
+
+        <div class="flex flex-col gap-2 ">
+          <div class="bg-blue-300 rounded-lg w-[40px] h-[40px] flex justify-center items-center">
+            <fa-icon class=" text-xl  text-yellow-300" [icon]="faBook"></fa-icon>
+          </div>
+          <h2 class="text-base font-bold"> Training Resources</h2>
+        </div>
+        <p class="">{{ trainingResources }} resources</p>
+
+      </div>
+    </div>
+
+    <div id="row2" class="w-[100%] min-h-[50%]  bg-slate-100 rounded-md shadow-md p-2 gap-1 flex flex-col items-center">
+
+      <div class="flex flex-row justify-between w-full px-2 items-center">
+        <h2 class="text-lg text-black font-bold">Tasks List</h2>
+        <div class="flex flex-row items-center gap-1">
+            <p class="text-black font-medium text-[12px] bg-slate-200 rounded-3xl px-2 py-[3px] cursor-pointer">Annually</p>
+            <p class="text-black font-medium text-[12px] bg-gray-400 rounded-3xl px-2 py-[3px] cursor-pointer">Quarterly</p>
+            <p class="text-black font-medium text-[12px] bg-zinc-400 rounded-3xl px-2 py-[3px] cursor-pointer">Monthly</p>
+            <p class="text-black font-medium text-[12px] bg-orange-200 rounded-3xl px-2 py-[3px] cursor-pointer">Weekly</p>
+            <p class="text-black font-medium text-[12px] bg-orange-100 rounded-3xl px-2 py-[3px] cursor-pointer">Daily</p>
+            <p class="text-black font-medium text-[12px] bg-amber-200 rounded-3xl px-2 py-[3px] cursor-pointer">Once</p>
+
+            <fa-icon class="text-base ml-3 cursor-pointer text-white font-extrabold rounded-full bg-cyan-700 px-[5px]" [icon]="faAdd"></fa-icon>
+        </div>
+
+      </div>
+
+      <div class="flex flex-row items-center justify-between w-full gap-2 px-2 py-1">
+        <div class="w-[75%] rounded-lg bg-slate-400 px-2 py-1 ">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="flex flex-row justify-between items-center w-[25%]">
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-green-600" [icon]="faCheck"></fa-icon>
+          </div>
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-green-600" [icon]="faInfoCircle"></fa-icon>
+          </div>
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer gap-1">
+            <fa-icon class=" text-base py-1 pl-2 rounded-lg   text-orange-300" [icon]="faUser"></fa-icon>
+            <fa-icon class=" text-sm  pr-2 rounded-lg   text-orange-300" [icon]="faArrowDown"></fa-icon>
+
+          </div>
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-red-800" [icon]="faTrash"></fa-icon>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="flex flex-row items-center justify-between w-full gap-2 px-2 py-1">
+        <div class="w-[75%] rounded-lg bg-slate-400 px-2 py-1 ">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="flex flex-row justify-between items-center w-[25%]">
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-green-600" [icon]="faCheck"></fa-icon>
+          </div>
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-green-600" [icon]="faInfoCircle"></fa-icon>
+          </div>
+
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer gap-1">
+            <fa-icon class=" text-base py-1 pl-2 rounded-lg   text-orange-300" [icon]="faUser"></fa-icon>
+            <fa-icon class=" text-sm  pr-2 rounded-lg   text-orange-300" [icon]="faArrowDown"></fa-icon>
+
+          </div>
+          <div class="bg-slate-300 rounded-lg  h-fit w-fit flex justify-center items-center cursor-pointer">
+            <fa-icon class=" text-base  px-2 py-[6px] rounded-lg   text-red-800" [icon]="faTrash"></fa-icon>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="w-full md:w-[24%] h-100  flex flex-col items-center gap-2">
+
+    <div id="add-project"
+      class="w-[98%] h-[9%] px-3 py-2 bg-slate-50 rounded-xl flex flex-row items-center justify-between cursor-pointer">
+      <fa-icon class="text-sm ml-1 text-white font-bold rounded-full bg-cyan-700 px-[4px]" [icon]="faAdd"></fa-icon>
+      <h2 class="text-base font-semibold mr-1">Add New Project</h2>
+    </div>
+
+
+    <div id="alerts" class="w-[98%] h-[40%]  px-2 py-2 flex flex-col gap-1 bg-slate-50 rounded-xl">
+
+      <div class="flex flex-row justify-between items-center">
+        <h2 class="text-base font-bold text-black">Alerts</h2>
+        <a class="underline" href="#">See all</a>
+      </div>
+
+      <div
+        class="w-[100%] h-[30px] px-1 border border-blue-300 shadow-md rounded-md flex flex-row items-center justify-between cursor-pointer">
+        <div class=" flex flex-row items-center justify-start">
+          <fa-icon class="mr-2" [icon]="faBell"></fa-icon>
+          <p class="text-[8px] font-medium">Task Completion Design</p>
+        </div>
+        <p class="text-[8px]">09:45 am</p>
+      </div>
+
+      <div
+        class="w-[100%] h-[30px] px-1 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-between cursor-pointer">
+
+        <div class=" flex flex-row items-center justify-start">
+          <fa-icon class="mr-2" [icon]="faBell"></fa-icon>
+          <p class="text-[8px] font-medium">Client Meeting</p>
+        </div>
+
+        <p class="text-[8px]">11:00 am</p>
+      </div>
+
+
+      <div
+        class="w-[100%] h-[30px] px-1 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-between cursor-pointer">
+        <div class=" flex flex-row items-center justify-start">
+          <fa-icon class="mr-2" [icon]="faBell"></fa-icon>
+          <p class="text-[8px] font-medium">Project Team Meeting</p>
+        </div>
+        <p class="text-[8px]">12:00 am</p>
+      </div>
+
+
+      <div
+        class="w-[100%] h-[30px] px-1 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-center cursor-pointer">
+
+        <fa-icon class="text-[9px] px-[3px] mr-1 text-white font-bold rounded-full bg-cyan-700"
+          [icon]="faAdd"></fa-icon>
+
+        <h2 class="text-[10px] font-medium">Create and alert</h2>
+
+
+
+      </div>
+
+    </div>
+
+    <div id="sops" class="w-[98%] h-[31%] bg-slate-50 rounded-xl px-2 py-2 gap-1 flex flex-col ">
+
+      <div class="flex justify-start">
+        <h2 class="text-base font-bold text-start text-black">SOPs</h2>
+      </div>
+
+      <div
+        class="w-[100%] h-[30px] px-2 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-start gap-1 cursor-pointer">
+        <fa-icon class="mr-2" [icon]="faPdf"></fa-icon>
+
+        <p class="text-[8px] font-medium">Office SOPs</p>
+      </div>
+      <div
+        class="w-[100%] h-[30px] px-2 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-start gap-1 cursor-pointer">
+        <fa-icon class="mr-2" [icon]="faEdit"></fa-icon>
+
+        <p class="text-[8px] font-medium">Create SOPs</p>
+      </div>
+      <div
+        class="w-[100%] h-[30px] px-2 border border-blue-300 shadow-md rounded-md  flex flex-row items-center justify-start gap-1 cursor-pointer">
+        <fa-icon class="mr-2" [icon]="faUpload"></fa-icon>
+
+        <p class="text-[8px] font-medium">Upload SOPs</p>
+      </div>
+
+    </div>
+
+    <div id="inspiration" class="w-[98%] h-[19%] bg-slate-50 rounded-xl flex flex-col gap-1 px-2 py-1">
+      <div class="flex flex-row justify-between items-center">
+        <h2 class="text-base font-bold text-black">Daily Inspiration</h2>
+        <fa-icon class="text-base text-yellow-500" [icon]="faSun"></fa-icon>
+      </div>
+      <p class="text-sm">
+        Lorem ipsum dolor sit amet.lorem4 Lorem
+      </p>
+
+    </div>
+
+  </div>
+</div>

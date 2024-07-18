@@ -1,0 +1,20 @@
+<!-- src/app/tasks/task-create/task-create.component.html -->
+<div>
+    <h2>Create Task</h2>
+    <form (ngSubmit)="createTask()">
+      <label>
+        Title:
+        <input [(ngModel)]="task.title" name="title" required />
+      </label>
+      <label>
+        Description:
+        <textarea [(ngModel)]="task.description" name="description"></textarea>
+      </label>
+      <label>
+        Completed:
+        <input type="checkbox" [(ngModel)]="task.isCompleted" name="isCompleted" />
+      </label>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+  
